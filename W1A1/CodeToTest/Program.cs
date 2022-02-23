@@ -2,11 +2,11 @@
 
 namespace CodeToTest;
 
-public class Program 
+public class Program
 {
     static void Main(string[] args)
     {
-        int timeOfDay = 12;
+        int timeOfDay = 0;
         //Console.ReadLine(timeOfDay);
         
         var greeting = Greeting(timeOfDay);
@@ -17,24 +17,27 @@ public class Program
     public static string Greeting(int timeOfDay)
     {
         string greeting;
+
         if (timeOfDay >= 5 && timeOfDay <= 12)
         {
-
-            greeting= "Top of the morning" ;
-
+            greeting = "Top of the morning";
         }
-        else if (timeOfDay >= 13 && timeOfDay <= 18)
+
+        else if (timeOfDay > 12 && timeOfDay <= 18)
         {
-
             greeting = "Good afternoon";
+        }
 
+        else if (timeOfDay < 5 && timeOfDay >= 0 || timeOfDay > 18 && timeOfDay < 24)
+        {
+            greeting = "Good evening";
         }
         else
-        {
-
-            greeting = "Good evening";
-
+        { 
+            greeting = "Invalid Input";
         }
+
+       
 
         return greeting;
     }
