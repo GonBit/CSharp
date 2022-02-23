@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9f0c138d-e264-449a-98b9-f63789dc80aa": {
+      "ProjectGuid": "9f0c138d-e264-449a-98b9-f63789dc80aa",
+      "DisplayName": "W1A1",
+      "ColorIndex": 0
+    },
+    "009621f6-ab42-45de-82a9-1f9a2f7f73f3": {
+      "ProjectGuid": "009621f6-ab42-45de-82a9-1f9a2f7f73f3",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,15 @@
+C:\Users\BlkBird\source\repos\W1A1\W1A1\bin\Debug\net6.0\W1A1.exe
+C:\Users\BlkBird\source\repos\W1A1\W1A1\bin\Debug\net6.0\W1A1.deps.json
+C:\Users\BlkBird\source\repos\W1A1\W1A1\bin\Debug\net6.0\W1A1.runtimeconfig.json
+C:\Users\BlkBird\source\repos\W1A1\W1A1\bin\Debug\net6.0\W1A1.dll
+C:\Users\BlkBird\source\repos\W1A1\W1A1\bin\Debug\net6.0\ref\W1A1.dll
+C:\Users\BlkBird\source\repos\W1A1\W1A1\bin\Debug\net6.0\W1A1.pdb
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.csproj.AssemblyReference.cache
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.AssemblyInfoInputs.cache
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.AssemblyInfo.cs
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.csproj.CoreCompileInputs.cache
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.dll
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\ref\W1A1.dll
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.pdb
+C:\Users\BlkBird\source\repos\W1A1\W1A1\obj\Debug\net6.0\W1A1.genruntimeconfig.cache
