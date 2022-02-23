@@ -58,9 +58,9 @@ Return string exception for numbers bellow 0 and over 24
 
 Same principles apply with the debugger while in a Unit Test.
 
-### TestCase attribute
+### Test Cases
 
-``` //Good morning
+``` csharp
         //Test cases 3 of the possible values for the same method
         [TestCase(5)]
         [TestCase(8)]
@@ -83,6 +83,12 @@ Same principles apply with the debugger while in a Unit Test.
 
         }
 ```
+
+Test methods shouldn't be dependent of other test methods. They should self validating and timely (fast).
+
+Don't put logic into unit testing, all you're doing is Arrange, Act, Assert.
+
+
 
 
 
