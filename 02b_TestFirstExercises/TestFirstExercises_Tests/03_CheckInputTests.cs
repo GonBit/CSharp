@@ -7,7 +7,7 @@ namespace TestFirstExercises_Tests
     {
         [TestCase("PASSWORD")]
         [TestCase("password")]
-        [TestCase("PaSswORd")]
+        [TestCase("PaSswORd")]        
         public void GivenTheStringPassword_RegardlessOfCase_CheckInput_ReturnsTrue(string str )
         {
             bool result = Methods.CheckInput(str);

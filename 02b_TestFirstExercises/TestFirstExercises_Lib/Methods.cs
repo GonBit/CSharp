@@ -22,12 +22,9 @@ namespace TestFirstExercises
         // Return a double rounded to 3 decimal places.
         public static double BODMAS(int inputNumber)
         {
-            int input = inputNumber;
-            double result = 0;
-            input = input * input;
-            input = input + 101;
-
-            result = input; //before because it would generate decimal numbers
+            double result = inputNumber;
+            result = result * result;
+            result = result + 101;            
             result = result / 7;
             result = result - 4;
             
@@ -40,9 +37,8 @@ namespace TestFirstExercises
         // implement this method so that it returns true if num is even, otherwise false
         public static bool EvenOdd(int num)
         {
-            int number = num;
-
-            if (number % 2 == 0) 
+            
+            if (num % 2 == 0) 
             {
 
                 return true;
@@ -71,7 +67,8 @@ namespace TestFirstExercises
             // by 2 and 5
             sum25 = ((max / 10) * (20 + (max / 10 - 1) * 10)) / 2;
 
-            return sum2 + sum5 - sum25;
+            max = sum2 + sum5 - sum25;
+            return max;
 
         }
 
@@ -89,9 +86,9 @@ namespace TestFirstExercises
         // of all the numbers in the list
         public static int SumList(List<int> list)
         {
-            int sum = list.Sum();//Using Linq            
-
-            return sum;
+             
+            //LINQ
+            return list.Sum();
         }
     }
 }

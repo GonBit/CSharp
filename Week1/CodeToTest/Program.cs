@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace CodeToTest;
 
 public class Program
@@ -11,6 +10,7 @@ public class Program
         
         var greeting = Greeting(timeOfDay);
         Console.WriteLine(greeting);
+        
 
     }
 
@@ -36,9 +36,40 @@ public class Program
         { 
             greeting = "Invalid Input";
         }
-
-       
+        
 
         return greeting;
     }
+
+    
+
+    public static string AvailableClassifications(int ageOfViewer)
+    {
+        string result;
+
+        switch (ageOfViewer)
+        {
+            case <= 12:
+                if (ageOfViewer == 12)
+                {
+                    result = "U, PG , 12 & 12A films are available.";
+                }
+                else
+                    result = "U, PG & 12 films are available.";
+
+                break;
+            case < 18:
+                result = "U, PG, 12, 12A & 15 films are available.";
+                break;
+            case >= 18:
+                result = "All films are available.";
+                break;
+            default:
+                result = "Invalid age.";
+                break;
+        }
+
+        return result;
+    }
 }
+

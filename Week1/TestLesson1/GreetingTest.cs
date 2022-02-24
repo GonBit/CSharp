@@ -82,4 +82,24 @@ namespace TestLesson1
         }*/
 
     }
+
+    public class LabTests
+    {
+
+        [Category("Classic Tests")]
+        [TestCase(-1, "Invalid age.")]
+        [TestCase(11, "U, PG & 12 films are available.")]
+        [TestCase(12, "U, PG , 12 & 12A films are available.")]
+        [TestCase(15, "U, PG, 12, 12A & 15 films are available.")]
+        [TestCase(16, "U, PG, 12, 12A & 15 films are available.")]
+        [TestCase(18, "All films are available.")]
+        [TestCase(50, "All films are available.")]
+        public void CorrectClassification(int age, string expected)
+        {
+
+            Assert.That(expected, Is.EqualTo(Program.AvailableClassifications(age)));
+
+        }
+
+    }
 }
