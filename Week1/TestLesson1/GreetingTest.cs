@@ -88,8 +88,10 @@ namespace TestLesson1
 
         [Category("Classic Tests")]
         [TestCase(-1, "Invalid age.")]
-        [TestCase(11, "U, PG & 12 films are available.")]
+        [TestCase(1, "U, PG films are available.")]
+        [TestCase(11, "U, PG films are available.")]
         [TestCase(12, "U, PG , 12 & 12A films are available.")]
+        [TestCase(14, "U, PG , 12 & 12A films are available.")]
         [TestCase(15, "U, PG, 12, 12A & 15 films are available.")]
         [TestCase(16, "U, PG, 12, 12A & 15 films are available.")]
         [TestCase(18, "All films are available.")]

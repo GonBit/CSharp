@@ -8,11 +8,11 @@
 using System;
 
 namespace W1A1; //filescoped namedspace
-public class Program 
+public class Program
 {
     public static void Main(string[] args)
     {
-            
+
         Console.WriteLine("Greetings, Earth");            
 
     }
@@ -34,7 +34,7 @@ Note: Use the Debugger
 
 ## Refactoring
 
-Refactoring is changing the code without changing the behavior. 
+Refactoring is changing the code without changing the behavior.
 It makes it more efficient and bug fixing.
 
 ## Creating a Unit test
@@ -52,7 +52,7 @@ By testing part of the code we have confidence in that part of the code and cont
 
 Exhaustible unit testing is impossible
 
-Return string exception for numbers bellow 0 and over 24 
+Return string exception for numbers bellow 0 and over 24
 
 ##### Debugging in Unit testing
 
@@ -175,7 +175,7 @@ Everyone is accountable for the team's productivity
 
   - **Which** resources or limits are involved?
 
-    
+
 
 - **M**easurable (meaningful, motivating).
 
@@ -236,13 +236,13 @@ As a salesperson, I want to be able to showcase current sales so that i can sell
 
 As a customer, I want to be able to view future competitions so that I can compete in them
 
-As a salesperson, I want to be able to highlight future competitions so that I sell tickets 
+As a salesperson, I want to be able to highlight future competitions so that I sell tickets
 
 **Open Days**
 
 As a customer, I want to be able to view future open days so I can attend them
 
-As a salesperson, I want to be able to add 
+As a salesperson, I want to be able to add
 
 **Lesson**
 
@@ -294,7 +294,7 @@ Ask about market share for tomorrow's discussion
 
 This is done at the end of every sprint
 
-Set the stage 
+Set the stage
 
 Gather Data
 
@@ -306,7 +306,4 @@ Close the retro
 
 *Emotional seismograph* for Retrospective
 
-
-
 Refactor
-

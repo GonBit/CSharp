@@ -49,21 +49,32 @@ public class Program
 
         switch (ageOfViewer)
         {
+            case < 0:
+                result = "Invalid age.";
+                break;
+
             case <= 12:
                 if (ageOfViewer == 12)
                 {
                     result = "U, PG , 12 & 12A films are available.";
                 }
                 else
-                    result = "U, PG & 12 films are available.";
+                    result = "U, PG films are available.";
+                break;
 
-                break;
             case < 18:
-                result = "U, PG, 12, 12A & 15 films are available.";
+                if (ageOfViewer >= 15)
+                {
+                    result = "U, PG, 12, 12A & 15 films are available.";
+                }
+                else
+                    result = "U, PG , 12 & 12A films are available.";
                 break;
+
             case >= 18:
                 result = "All films are available.";
-                break;
+                break;  
+                
             default:
                 result = "Invalid age.";
                 break;
