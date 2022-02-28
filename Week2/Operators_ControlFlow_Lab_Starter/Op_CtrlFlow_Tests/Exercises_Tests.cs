@@ -10,8 +10,8 @@ namespace Op_CtrlFlow_Tests
         [Test]        
         public void MyMethod_ReturnsCorrectAverage(int average)
         {
-            var averageTest = Exercises.MyMethod(num1);
-            Assert.That(averageTest, Is.EqualTo(average));
+                    
+            Assert.That(true, Is.EqualTo(average));
 
         }
 
@@ -44,6 +44,31 @@ namespace Op_CtrlFlow_Tests
         {
             var result = Exercises.TicketType(age);
             Assert.That(result, Is.EqualTo(expected));
+        }
+
+
+        [TestCase(39, "Fail")]
+        [TestCase(-1, "Invalid mark")]
+        [TestCase(40, "Pass")]
+        [TestCase(60, "Pass with Merit")]
+        [TestCase(75, "Pass with Distinction")]
+        [TestCase(102, "Invalid mark")]
+        public void CheckIfGradeReturnsExpectedValue(int grade, string expectedMark)
+        {
+            var result = Exercises.Grade(grade);
+            Assert.That(result, Is.EqualTo(expectedMark));
+        }
+
+        
+        [TestCase(4, 20)]
+        [TestCase(3, 50)]
+        [TestCase(2, 75)]
+        [TestCase(1, 100)]
+        [TestCase(0, 200)]
+        public void CheckIfSwitchReturnsProperAttendees(int covidLevel, int expectedAttendees)
+        {
+            var result = Exercises.GetScottishMaxWeddingNumbers(covidLevel);
+            Assert.That(result, Is.EqualTo(expectedAttendees));
         }
     }
 }
