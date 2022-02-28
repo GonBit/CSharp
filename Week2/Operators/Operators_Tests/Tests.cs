@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 using Operators;
 using ControlFlowApp;
@@ -6,7 +7,6 @@ namespace Operators_Tests
 {
     public class Tests
     {
-
 
         [Category("Total Stones")]
         [TestCase(156, 11)]
@@ -31,5 +31,15 @@ namespace Operators_Tests
         }
 
         //edge cases
+        [Category("Grades")]
+        [TestCase(5, "Fail")]
+        [TestCase(85, "Distinction")]
+        [TestCase(65, "Pass")]
+        public void GradeCheck(int grade, string expected)
+        {
+
+            Assert.That(expected, Is.EqualTo(ProgramCFlow.GetGrade(grade)));
+
+        }
     }
 }

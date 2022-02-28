@@ -17,6 +17,8 @@ public class ProgramCFlow
         Console.WriteLine("Highest for loop : " + LoopTypes.HighestForLoop(nums));
         Console.WriteLine("Highest while loop : " + LoopTypes.HighestWhileLoop(nums));
         Console.WriteLine("Highest do-while loop : " + LoopTypes.HighestDoWhileLoop(nums));
+        
+        class gradeClass = new class();
     }
 
 
@@ -46,11 +48,9 @@ public class ProgramCFlow
 
     }
 
-    private static void GetGrade(int mark)
+    private static string GetGrade(int mark)
     {
-        //var grade = mark >= 65 ? "Pass" : "Fail";
-        //Console.WriteLine(grade);
-
-        var grade = mark >= 65 ? (mark >= 85 ? "Distinction" : "Pass") : "Fail";
+        return mark >= 65 ? (mark >= 85 ? "Distinction" : "Pass") : "Fail";
     }
+
 }
