@@ -9,7 +9,19 @@ public class Program
         //Console.ReadLine(timeOfDay);
         
         var greeting = Greeting(timeOfDay);
-        Console.WriteLine(greeting);
+        //Console.WriteLine(greeting);
+
+        try
+        {
+            Console.WriteLine(Greeting(5));
+            Console.WriteLine(Greeting(35));
+
+        }
+        catch (ArgumentOutOfRangeException ex) {
+
+            //Console.WriteLine("Invalid Input");
+            Console.WriteLine(ex.Message);
+        }
         
 
     }
@@ -33,10 +45,9 @@ public class Program
             greeting = "Good evening";
         }
         else
-        { 
-            greeting = "Invalid Input";
-        }
-        
+        {
+            throw new ArgumentOutOfRangeException("Invalid Input");
+        }               
 
         return greeting;
     }

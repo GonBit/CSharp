@@ -16,13 +16,14 @@ public class ProgramCFlow
         Console.WriteLine("Highest foreach : " + LoopTypes.HighestForEachLoop(nums));
         Console.WriteLine("Highest for loop : " + LoopTypes.HighestForLoop(nums));
         Console.WriteLine("Highest while loop : " + LoopTypes.HighestWhileLoop(nums));
-        Console.WriteLine("Highest do-while loop : " + LoopTypes.HighestDoWhileLoop(nums));
+        Console.WriteLine("Highest do-while loop : " + LoopTypes.HighestDoWhileLoop(nums));       
         
-        class gradeClass = new class();
+
     }
 
 
-    public static string Priority(int level) {
+    public static string Priority(int level)
+{
 
         string priority = "Code ";
         switch (level)
@@ -50,7 +51,9 @@ public class ProgramCFlow
 
     private static string GetGrade(int mark)
     {
+        
         return mark >= 65 ? (mark >= 85 ? "Distinction" : "Pass") : "Fail";
     }
+
 
 }

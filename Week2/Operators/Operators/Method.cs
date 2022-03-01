@@ -8,7 +8,26 @@ namespace Operators
 {
     public class Method
     {
-        
+        public static void NotMain(string[] args)
+        {
+
+            int tStones = 0;
+            var stones = GetStones(tStones);
+
+            try
+            {
+                GetStones(8);
+                GetStones(-18);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+
+            }
+
+        }        
+
+
         public static int GetStones(int totalStones)
         {
             /*
@@ -19,7 +38,11 @@ namespace Operators
             return stones;
             */
 
-            return totalStones / 14; //SIMPLIFIED
+            //SIMPLIFIED            
+                
+            if( totalStones < 0)
+                throw new Exception("Invalid Input");
+            else return totalStones / 14;
         }
         
 
@@ -34,7 +57,9 @@ namespace Operators
 
              return totalPounds % 14; //SIMPLIFIED
         }
+
        
+
     }
 
 }

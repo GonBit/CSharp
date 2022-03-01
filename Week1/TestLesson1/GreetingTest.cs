@@ -1,15 +1,22 @@
 using CodeToTest;
 using NUnit.Framework;
+using System;
 
 namespace TestLesson1
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
+        [Category("Exceptions")]
+        [TestCase(25)]
+        [TestCase(-1)]        
+        public void WhenTimeIsAbove25_ThrowsException(int time)
         {
-
+            Assert.That(() => Program.Greeting(time), Throws.TypeOf<ArgumentOutOfRangeException>());
+        
         }
+
+
+
         //Good morning
         //Test cases 3 of the possible values for the same method
         [TestCase(5)]
@@ -42,7 +49,7 @@ namespace TestLesson1
             Assert.That(expected, Is.EqualTo(Program.Greeting(time)));
 
         }
-
+        /* 
         //Invalid Input
         [TestCase(-12)]
         [TestCase(25)]        
@@ -54,7 +61,7 @@ namespace TestLesson1
 
         }
 
-        /*        
+               
         [Test]
         public void GivenATimeOf21_Greeting_ReturnGoodEvening()
         {
