@@ -245,3 +245,114 @@ checked {
 }
 ```
 
+Method overloading is when there's multiple calls on the method with different parameters
+
+# Wednesday 2/3/2022
+
+## More types
+
+## Strings
+
+Strings are objects. 
+
+Lower case string is an alias for the string class.
+
+```csharp
+string steven = "Steven Maddox";
+steven = "Steven Mandal";
+// We've created 2 strings, the first string is not longer being references
+
+//Another way of creating a string
+String nish = "Nish Kumar";
+String nish2 = new String("Nish Kumar");
+string nish3 = "Nish Kumar";
+// We can use the equality operator (==) in strings
+```
+
+### Using Split
+
+```csharp
+string names = "Jab,James,Gaurav,Goncalo";
+string[] namesToArray = names.Split(',');
+
+foreach (var name in namesToArray){    
+    Console.WriteLine(name);
+}
+```
+
+![image-20220302104258537](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220302104258537.png)
+
+
+
+We’re not changing the string value; these methods are returning a new string. Strings are immutable
+
+Continuous memory blocks
+
+Strings are super important because they display text
+
+
+
+### String Builder
+
+Is a reference type. Means that data is being stored in the object, and they are mutable
+
+```csharp
+	Console.WriteLine(StringBuilderExercise(myString));
+
+privae static string StringBuilderExercise(string myString){
+    
+    var trimmedUpString = myString.Trim().ToUpper();
+    StringBuilder() sb = new StringBuilder(trimmedUpperString);
+    
+    return null;
+    
+}
+```
+
+## String Concatenation
+
+```csharp
+// Use of Concat Function
+var spartaString = String.Concat("This", " is ", "Sparta");
+// Returns This is Sparta
+```
+
+## String Interpolation
+
+```csharp
+var num1 = 2;
+var num2 = 3;
+
+var fString = $"{num1} to the power of {num2} is {Math.Pow(num1, num2)}";
+Console.WriteLine(fString);
+
+var fString2 = $"That will be {num1 / 3.0:C}, please"; //C formats to currency
+var fString3 = $"You've recieved {1 / 10.0:P} in your test"; //P formats it to percentage
+Console.WriteLine(fString2);
+Console.WriteLine(fString3);
+```
+
+### Comparation
+
+```csharp
+Console.WriteLine("My name is : " + str + " using ");// concatenation
+Console.WriteLine($"My name is {str} using interpolation"); // the $ indicates interpolation
+```
+
+## String Parsing
+
+```csharp
+bool isSuccess;
+        do
+        {
+
+            Console.WriteLine("How many apples");
+            string input = Console.ReadLine();
+            isSuccess = Int32.TryParse(input ,out int numApples);//TryParse super useful for applications that take inputs
+            Console.WriteLine($"{numApples} apples");
+
+        } while (isSuccess);
+
+        Console.WriteLine("Invalid Number");
+```
+

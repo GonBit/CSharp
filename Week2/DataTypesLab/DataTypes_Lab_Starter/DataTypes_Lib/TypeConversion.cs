@@ -6,17 +6,11 @@ namespace DataTypes_Lib
     {
         public static short UIntToShort(uint num)
         {
-            checked { 
-            try
-            {
+            checked
+            { 
+           
                 return (short)num;
-            }
-            catch (OverflowException ex)
-            {
-
-                throw new OverflowException(ex.Message);
-            
-            }
+          
             }
 
         }
@@ -27,7 +21,8 @@ namespace DataTypes_Lib
             //Midpoint values are rounded to the next number away from zero.
             //For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9.
             //This form of rounding is represented by the MidpointRounding.AwayFromZero enumeration member.
-            return (long)num;            
+            return (long)num;
+            // return Convert.ToInt64(num);            
             
         }
     }

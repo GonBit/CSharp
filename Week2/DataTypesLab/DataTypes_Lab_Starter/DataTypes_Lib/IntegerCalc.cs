@@ -8,16 +8,9 @@ namespace DataTypes_Lib
         {
             checked //checked to catch the overflow
             {
-                try
-                {
-                    return num1 + num2;
+             
+                return num1 + num2;             
 
-                }
-                catch (OverflowException ex)
-                {
-                    throw new OverflowException(ex.Message);
-
-                }
             }
             
         }
@@ -26,17 +19,9 @@ namespace DataTypes_Lib
         {
             checked //same concept as before
             {
-                try
-                {
-                    return num1 - num2;
-
-                }
-                catch (OverflowException ex) 
-                { 
-            
-                    throw new OverflowException(ex.Message);
-
-                }
+               
+                return num1 - num2;
+               
             }            
             
         }
@@ -50,7 +35,7 @@ namespace DataTypes_Lib
         public static int Divide(int num1, int num2)
         {
 
-            if (num1 == 0 || num2 == 0)
+            if (num2 == 0)
             {
                 throw new ArgumentException("Can't divide by zero");
             }
@@ -61,7 +46,7 @@ namespace DataTypes_Lib
 
         public static int Modulus(int num1, int num2)
         {
-            if(num1 == 0 || num2 == 0)
+            if(num2 == 0)
             {
 
                 throw new ArgumentException("Can't modulo by zero");
