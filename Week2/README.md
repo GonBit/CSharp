@@ -343,16 +343,332 @@ Console.WriteLine($"My name is {str} using interpolation"); // the $ indicates i
 
 ```csharp
 bool isSuccess;
-        do
-        {
+do
+{
 
-            Console.WriteLine("How many apples");
-            string input = Console.ReadLine();
-            isSuccess = Int32.TryParse(input ,out int numApples);//TryParse super useful for applications that take inputs
-            Console.WriteLine($"{numApples} apples");
+Console.WriteLine("How many apples");
+string input = Console.ReadLine();
+isSuccess = Int32.TryParse(input ,out int numApples);//TryParse super useful for applications that take inputs
+Console.WriteLine($"{numApples} apples");
 
-        } while (isSuccess);
+} while (isSuccess);
 
-        Console.WriteLine("Invalid Number");
+Console.WriteLine("Invalid Number");
 ```
 
+What else is immutable in C#?
+
+Arrays.
+
+## Arrays
+
+### One Dimensional
+
+Different types you can declare an array
+
+```csharp
+int[] myIntArray = {12,34,23,45,56}; //declared and initialised
+var traineesArray = new string[]{" bla", "bla"}; //declared and initialised using var
+var traineesArray2 = new string[3];
+
+//replace the values of the traineesArray with new values
+traineesArray[0] = "Jab";
+traineesArray[1] = "ble";
+```
+
+When you are declaring an array you need to specify it's size either by filling with { 0 , 1 , 2 } or by new array[2]
+
+Iterate through an array using for, foreach etc..
+
+GetUpperBound
+
+GetLowerBound for exercise
+
+### Two Dimensional
+
+```csharp
+//0  1
+//[ ][ ] 0
+//[ ][ ] 1
+//[ ][ ] 2 
+//[ ][ ] 3
+int[,] grid = new int[2, 4];  //2 col 4 rows 2by4
+grid[0,0] = 6;
+grid[1,1] = 8;
+grid[1,3] = 10;
+
+//[6][ ]
+//[ ][8]
+//[ ][ ]
+//[ ][10]
+```
+
+```csharp
+ //2D array
+        char[,] gridTwo =
+        {
+            { 'a','b'},
+            { 'c','d'},
+            { 'e','f'},
+            { 'g','h'},
+
+        };
+        foreach (char c in gridTwo)
+        { 
+            Console.WriteLine(c);//itterate in column instead of line
+        }
+        //research upperbound and lowerbound //nested for loop
+        //loads of sort algorithms
+```
+
+### Jagged Arrays
+
+```csharp
+ public static void JaggedArray()
+    {
+        int[][] intJArray = new int[2][];
+        intJArray[0] = new int[4];
+        intJArray[1] = new int[2];
+
+        //[][][3][]
+        //[5][]
+        intJArray[0][2] = 3;
+        intJArray[1][0] = 5;
+
+    }
+```
+
+Its nice to think of md arrays as coordinates when looking up the index at where your value is stored (xyz)
+
+for Jagged arrays you can think of it more of a nested array where finding the array that you find your value in is the first index and the second index contains the actual array your value is inside.
+
+## Time in C#
+
+DateTime
+
+Timespan
+
+
+
+## Enums
+
+It's useful to represent a fixed set of constants. They give type safety like the days of the week By defining an enum we are limiting the value. Each member of a enum has a value, could be int or any other type
+
+They are assigned starting with 50
+
+HEARTS  //0 , CLUBS = 50 , DIAMONDS // 51 , SPADES //52
+
+
+
+# Thursday 3/3/2022
+
+Random uses computer ticks to generate the number
+
+```csharp
+//Seeding with the current time in ticks
+        var rng = new Random();
+        var rngSeeded = new Random(42);
+        var between1And10 = rngSeeded.Next(1,11);
+        Console.WriteLine(between1And10); //result 7
+
+        var rollDice1 = rng.Next(1, 7);
+        var rollDice2 = rng.Next(1, 7);
+        var rollDice3 = rng.Next(1, 7);       
+
+        Console.WriteLine($"{rollDice1} {rollDice2} {rollDice3} {rollDice1 + rollDice2 + rollDice3}");
+```
+
+## Methods
+
+![image-20220303104425822](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303104425822.png)
+
+## Method overloading
+
+C# method overloading **allows a class to declare multiple methods with the same name, separated by their signatures**.
+**Method overloading can be achieved by the following:**
+
+1. By changing number of parameters in a method.
+2. By changing the order of parameters in a method.
+3. By using different data types for parameters.
+
+In C# is not possible to return more than 1 value of a method
+
+You can designate 1 or more parameters to return but it would be together
+
+Value type and reference type
+
+```csharp 
+int x = 1; // this holds the values
+
+var arr = new int []{1,2,3} //this points the where the value is
+```
+
+![image-20220303105325450](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303105325450.png)
+
+
+
+```csharp
+//main function 	    
+		int y = 10;
+        int [] arr = new int[] { 1 , 2 , 3};//it changes the value of the array
+        var result = DoThis(y, "Sad", arr); //y is assigned to x from the DoThis method - y holds its value while x doesn't
+    
+        Array.ForEach(arr, x => Console.WriteLine(x));//so the 1,2,3 returns 30,2,3 we passed a copy of y to x =10;
+        //x only exists in the DoThis method and return the x*x;
+        //we passed a reference with the array
+        //anything we do with our array it finds the address and changes its value in the heap
+        Console.WriteLine(y);
+
+    public static int DoThis(int x, string y, int[] arr)
+    { 
+    
+        Console.WriteLine($"I am feeling {y}");
+        //If i change the first element
+        arr[0] = 30;
+        x = 3;
+        return x * x;
+    
+    }
+```
+
+To clean a heap after the values have been used and manipulated we use a garbage collector to clean and compact the heap
+
+### Ref keyword
+
+```csharp
+	public static void Add(int num)
+    {
+        num++;
+    }
+    public static void Add(ref int num)
+    {
+        num++;
+    }
+//Main method
+int y = 10;
+int z = 10;
+Add(y); //incremented the copy of Y and increments - the value of Y doesn't change - prints out 10
+Add(ref z); //passing reference and increments - the value of Y does change - prints out 11
+```
+
+
+
+### Out keyword
+
+```csharp
+ //main function
+bool isLarge;
+var result = DoThis(10/*int x*/, "Here's a string"/*string y*/, out isLarge/*bool z*/); //out passes by reference
+Console.WriteLine(isLarge);
+
+public static int DoThis(int x, string y, out bool z) 
+    {
+        Console.WriteLine(y);
+        z = (x > 10);
+        return x * x;
+    
+    }
+```
+
+The out is a keyword in C# which is **used for the passing the arguments to methods as a reference type**. It is generally used when a method returns multiple values. ... The ref is a keyword in C# which is used for the passing the arguments by a reference.
+
+ A **tuple** is a list of different things
+
+```csharp
+  var myTuple = ( "Liam", "Gallangher", 49 );
+        Console.WriteLine(myTuple);
+        Console.WriteLine(myTuple.Item2);
+
+var myTuple = ( fName:"Liam", lName:"Gallangher", age:49 );
+        Console.WriteLine(myTuple);
+        Console.WriteLine(myTuple.lName);
+
+(string fName, string lName, int age) myTuple2 = ("Noel","Gallangher", 55);// another way of initialising
+
+var noel = myTuple.fName;
+var myTuple3 = ("Bon", noel); // add elements from a tuple to another
+```
+
+How to return a tuple?
+
+```csharp
+public static (int,int)/* a method tha returns a tuple */ ConvertPoundsToStones(int pounds)
+    {
+        const int poundsInAStone = 14;
+        var st = pounds / poundsInAStone;
+        var lb = pounds % poundsInAStone;
+        
+        return (st,lb);
+    
+    //or return as a variable
+    var result = (st,lb);
+    return result;
+    }
+
+
+//main method
+var result = ConvertPoundsToStones(98);
+Console.WriteLine(result);
+```
+
+An array is reference type
+
+## Memory model
+
+### Stack
+
+The stack is an area of fast-access memory where variables are stores as they are declared. Last In First Out .Variables in the stack - values OR references to the heap. Local variables are POPPED off the stack when they go out of scope.
+
+### Heap
+
+The heap is a larger memory area and it hold what is being references when a new ref type is created the system finds space for it on the heap. The reference variable stores the ADDRESS NOT THE DATA
+
+```csharp
+int stanni = 4; //stack
+string james = "James"; // heap with reference in stack
+int[] laura = { 6, 7, 2 }; // heap with reference in stack
+for (var gaurav = 0; gaurav < laura.Length; gaurav++)
+{ Console.WriteLine(laura[gaurav]); }
+double jab = 3.14159;
+var steven = stanni;
+stanni++;
+string[] seb = { "cat", "dog" };
+{
+var marian = laura;
+marian[2] = 42;
+string[] goncalo = { "perch", "cod", "eel" };
+seb = goncalo;
+seb[1] = "bass";
+var ned = james;
+james = goncalo[0];
+}
+jab = laura[2];
+```
+
+![image-20220303145710284](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303145710284.png)
+
+## Garbage Collector
+
+![image-20220303150543130](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303150543130.png)
+
+## References to references 
+
+![image-20220303150708434](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303150708434.png)
+
+## Garbage collection
+
+![image-20220303151001564](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303151001564.png)
+
+Find, Destroy. Compact
+
+## Why the difference
+
+![image-20220303151049805](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303151049805.png)
+
+## Advantage of reference types
+
+![image-20220303151152551](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303151152551.png)
+
+## Beware!!
+
+![image-20220303151218022](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220303151218022.png)

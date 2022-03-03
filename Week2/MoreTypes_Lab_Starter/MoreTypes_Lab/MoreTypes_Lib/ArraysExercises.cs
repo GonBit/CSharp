@@ -50,13 +50,14 @@ namespace MoreTypes_Lib
         {
             
             string[][] mainArray = new string[countRow1][];
-            string[] subArray = new string[countRow2];
-            //[][]
+            string[] subArray = new string[countRow2]; 
+            
+            //populate 2 arrays and add to the main array
 
             int countX = 0;
             int countY = 0;
 
-            if (countRow1 * countRow2 != contents.Count)
+            if (countRow1 + countRow2 > contents.Count)
             {
 
                 throw new ArgumentException("Number of elements in list must match array size");
