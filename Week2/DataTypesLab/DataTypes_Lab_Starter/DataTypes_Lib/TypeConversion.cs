@@ -7,14 +7,10 @@ namespace DataTypes_Lib
         public static short UIntToShort(uint num)
         {
             checked
-            { 
-           
-                return (short)num;
-          
+            {            
+                return (short)num;          
             }
-
         }
-
         public static long FloatToLong(float num)
         {
             num = (float)Math.Round(num, MidpointRounding.AwayFromZero);
