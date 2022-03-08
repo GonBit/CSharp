@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace SafariParkTests
+namespace VehicleTests
 {
     public class Tests
     {

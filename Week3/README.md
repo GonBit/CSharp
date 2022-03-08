@@ -9,6 +9,7 @@ Flexibility because of Polymorphism.
 ## The four pillars
 
 ### Abstraction
+ is a general concept which you can find in the real world as well as in OOP languages
 A way of managing complexity
 Model the real world
 Things contain data and methods that interact with that data.
@@ -23,6 +24,7 @@ And be combined together to make more things
 Abstraction is the concept of a class.
 
 ### Encapsulation
+Encapsulation in object oriented programming is a mechanism of restricting direct access to some components of an object, so users cannot access
 Hiding how it works with private and using get and set
 We are not interested in how it works
 We are only interested in how we can interact with it
@@ -40,6 +42,7 @@ Single responsibility
 Cohesion good, coupling bad
 
 ### Inheritance
+Is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
 A way to avoid writing the same code to describe similar things
 A base class encapsulates the common data and functionality
 Derived classes add new functionality and/ or data to deal with specialisms
@@ -73,13 +76,14 @@ High cohesion, low coupling
 
 ## Constructor
 A constructor is used instantiate new objects.
-A constructor doesn't return anything
-'''csharp
-//Create a constructor     
-        public Person(string firstName, string lastName, int age)
-        {
-            _firstName = firstName;
-            _lastName = lastName;
-            Age = age;
-        }
-'''
+A constructor doesn't have a return type. The constructor returns the reference to the new object
+A constructor must also have the same name as the class
+
+## Property
+public int Age { get; set; }
+
+Property are private variables with get and set.
+
+## Structs
+Structs are value types(stack) and classes are reference types(heap)
+Used to hold simpliesh data

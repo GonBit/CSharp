@@ -31,11 +31,11 @@ namespace SafariParkApp
         }
 
         //they can't be accessed outside of the class
-        private string _firstName { get; init; } 
-        private string _lastName { get; init; }
+        public string _firstName { get; init; } 
+        public string _lastName { get; init; }
                 
 
-        //Create a constructor     
+        ////Create a constructor     
         public Person(string firstName, string lastName, int age = 0)
         {
             _firstName = firstName;
@@ -49,12 +49,12 @@ namespace SafariParkApp
             Age = age;
         }
 
-        public Person(string firstName)
-        {
-            _firstName = firstName;
-        }
+        //public Person(string firstName)
+        //{
+        //    _firstName = firstName;
+        //}
 
-        public string FullName => $"{_firstName} {_lastName}"; //this is the same as the method but a property
+        //public string FullName => $"{_firstName} {_lastName}"; //this is the same as the method but a property
 
         public string GetFullName()
         {
