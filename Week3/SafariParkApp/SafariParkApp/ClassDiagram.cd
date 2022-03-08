@@ -1,17 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="SafariParkApp.Person">
-    <Position X="1.5" Y="1" Width="2.25" />
+    <Position X="1.25" Y="3" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAEEAAAAAAAAAAAgIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAEAEEAAAAAAAAAAAgIAAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SafariParkApp.Vehicle">
-    <Position X="4.25" Y="1" Width="3.25" />
+    <Position X="4.75" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAoAAAAAgEAAAAAQBAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SafariParkApp.Hunter">
+    <Position X="1.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Hunter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="9.75" Y="1.75" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SafariParkApp.Airplane">
+    <Position X="6" Y="4.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAIAAAAAEAAAAggAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Airplane.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

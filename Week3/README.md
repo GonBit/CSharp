@@ -9,7 +9,7 @@ Flexibility because of Polymorphism.
 ## The four pillars
 
 ### Abstraction
- is a general concept which you can find in the real world as well as in OOP languages
+Is a general concept which you can find in the real world as well as in OOP languages
 A way of managing complexity
 Model the real world
 Things contain data and methods that interact with that data.
@@ -87,3 +87,36 @@ Property are private variables with get and set.
 ## Structs
 Structs are value types(stack) and classes are reference types(heap)
 Used to hold simpliesh data
+
+# Tuesday 8/3/2022
+Classes have Fields, Properties and Methods
+
+## Inheritance
+A way to avoid writing the same code to describe similar Things
+Parent class encapsulates the common data and functionality
+Sub-classes add new functionality and / or data to deal with specialisms
+B extends A
+It's a relationship
+
+Thins to another
+When the derived class constructor is called, it immediately calls the base class Constructor
+Once the base class constructor
+
+What is a virtual keyword
+Its a word that would be used in a method in a base class that can be override in a derived class.
+
+The use of base in the class
+In the context of class is inheriting the Fields
+In the context of Constructor - its expecting parameters
+
+What does the protected keyword do
+In the base class we use it to let our drive class use it but it makes it inaccessible by other methods
+
+### Abstract methods and Classes
+Both concrete and abstract classes can have a mixture of concrete and abstract methods\
+
+The sealed keyword doesn't allow Inheritance of that class
+
+Abstract classes can have both concrete and abstract methods
+Abstract methods MUST be implemented in their derived classes
+Concrete classes cannot have abstract methods 
