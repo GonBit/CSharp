@@ -11,7 +11,7 @@ namespace SafariParkApp
         public string _airline;        
         public int Altitude { get; private set; }
 
-        public Airplane(int capacity) 
+        public Airplane(int capacity) : base(capacity) 
         {
            
         }
@@ -28,14 +28,12 @@ namespace SafariParkApp
             Altitude -= distance;
         }
         public override string Move()
-        {
-            _position += Speed;
-            return $"Moving along at an altitude of {Altitude} meters.";
+        {           
+            return $"{base.Move()} altitude of {Altitude} meters.";
         }
         public override string Move(int times)
-        {
-            _position = times * Speed;
-            return $"Moving along {times} times at an altitude of {Altitude} meters.";
+        {            
+            return $"{base.Move(times)} at an altitude of {Altitude} meters.";
         }
         public override string ToString()
         {            

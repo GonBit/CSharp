@@ -63,8 +63,8 @@ public class SafariPark
             Console.WriteLine(n.CalculateArea());
         }
         */
-        #endregion
 
+        /*
         Airplane a = new Airplane(200, 100, "JetsRUs"){NumPassengers = 150};
         a.Ascend(500); 
         Console.WriteLine(a.Move(3));
@@ -72,8 +72,84 @@ public class SafariPark
         a.Descend(200); 
         Console.WriteLine(a.Move()); 
         a.Move(); 
-        Console.WriteLine(a);
+        Console.WriteLine(a);*/
+        #endregion
+        #region Polymorphism
+        /*
+        List<Object> gameObjects = new List<Object>()
+        {
+            new Person ("Nish" , "Mandal") { Age = 32},
+            new Airplane (400, 200, "Boeing"),
+            new Vehicle (12,43),
+            new Hunter ("Hunter", "McHunty" , "Hunter")
+        };
+
+        foreach (var gameObj in gameObjects)
+        {
+            //Console.WriteLine(gameObj);
+        }*/
+
+        //Yolanda is a person, an object is an object, yolanda is specialized than a stardant object
+        //Passing by reference
+        //Run time polymorphism(override) . Method overloading is type of compile rime polymorphism
+        //Person yolanda = new Person("Yolanda", "Young") { Age = 32};
+        //SpartaWrite(yolanda);
+        /*
+        var a = new Person("Nish", "Mandal") { Age = 32 };
+
+        var b = new Hunter("Hunter", "McHunty", "Hunter");
+        SpartaWrite(a);               
+        var c = (Person)b;
+        SpartaWrite(c);
+
+        var d = a as Hunter;//You can't cast this
+        SpartaWrite(d);
+        */
+        /*
+        List<IMoveable> moveables = new List<IMoveable>()
+        {
+            new Person("Hue", "HueHue"){ Age =42},
+            new Vehicle(51,45),
+        };
+
+        foreach (var num in moveables)
+        { 
+            Console.WriteLine(num.Move());
+        }*/
+
+        #endregion
+
+        IShootable laser = new LaserGun("Laser Premium");
+        IShootable waterPistol = new WaterPistol("H2Wow");
+        IShootable hunter = new Hunter("Gaurav", "Dogra", laser);
+        IShootable hunter2 = new Hunter("Goncalo", "Nunes", waterPistol);
+        IShootable camera = new Camera("Samsung");
+
+        List<IShootable> weapons = new List<IShootable>()
+        {
+            laser,
+            waterPistol,
+            hunter,
+            hunter2,
+            camera            
+        };
+
+        foreach (var weapon in weapons)
+        {
+            Console.WriteLine(weapon.Shoot());
+        }
+        
     }
+    /*
+    public static void SpartaWrite(Object obj)
+    { 
+        Console.Write(obj.ToString());
+        if (obj is Hunter)//obj is a hunter cast it to hunter type
+        {
+            var hunterObj = (Hunter)obj;
+            Console.WriteLine(hunterObj.Shoot);
+        }
+    }*/
 
     static void DemoMethod(Person p, Point3D pt)//From Point3D
     {

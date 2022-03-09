@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace SafariParkApp
 {
-    public class Vehicle
+    public class Vehicle : IMoveable
     {
         protected int _capacity;
         protected int _position; 
-        private int _numPassengers;
-        
-        
+        private int _numPassengers;       
 
         public int Position
         {

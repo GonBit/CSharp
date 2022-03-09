@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SafariParkApp
 {
-    public class Person
+    public class Person : IMoveable
     {
         
         //public so can be accessed outside
@@ -14,26 +14,25 @@ namespace SafariParkApp
         //public int Age { get; set; } 
 
         // This is the full body of a property
-        private int _age;
+        //they can't be accessed outside of the class
+        public string FirstName { get; init; }
+        public string LastName { get; init; }
+        //private int _age;
 
         public int Age
         {
-            get 
-            { 
-                return _age;
+            get
+            {
+                return Age;
             }
             set
             {
                 if (value < 0)
                     throw new ArgumentException("Age cannot be less than 0");
                 else
-                    _age = value; 
+                    Age = value; 
             }
         }
-
-        //they can't be accessed outside of the class
-        public string _firstName { get; init; } 
-        public string _lastName { get; init; }
 
         public Person()
         {
@@ -42,8 +41,8 @@ namespace SafariParkApp
         ////Create a constructor     
         public Person(string firstName, string lastName, int age = 0)
         {
-            _firstName = firstName;
-            _lastName = lastName;
+            FirstName = firstName;
+            LastName = lastName;
             Age = age;
         }        
 
@@ -55,7 +54,7 @@ namespace SafariParkApp
         //Overriding my parent classes implementation of ToString()
         public override string ToString()
         {
-            return $"{base.ToString()} Name: {_firstName} {_lastName} Age: {Age}";
+            return $"{base.ToString()} Name: {FirstName} {LastName} Age: {Age}";
         }
 
         //public Person(string firstName)
@@ -68,8 +67,17 @@ namespace SafariParkApp
         public string GetFullName()
         {
             
-            return $"{_firstName} {_lastName}";
-        }       
+            return $"{FirstName} {LastName}";
+        }
 
+        public string Move()
+        {
+            return "Walking along";
+        }
+
+        public string Move(int times)
+        {
+            return $"Walking along {times} times";
+        }
     }
 }

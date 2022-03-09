@@ -6,39 +6,31 @@ using System.Threading.Tasks;
 
 namespace SafariParkApp
 {
-    public class Hunter : Person //Inherite from person
+    public class Hunter : Person, IShootable //Inherite from person
     {
-        private string _camera;
+        public IShootable Shooter { get; init; }
         public Hunter()
         {
 
         }
 
-        public Hunter(string fName, string lName, string camera = "") /* : base(fName , lName)*/
+        public Hunter(string fName, string lName, IShootable shooter) 
         { 
-            _camera = camera;            
+            FirstName = fName;
+            LastName = lName;
+            Shooter = shooter;            
         }
         
         public string Shoot()
         {
-            var fullname = $"{base._firstName} {base._lastName}";
-            return $"{fullname} has taken a photo with the {_camera}";
+            return Shooter.Shoot();
         }
 
         public /*sealed doesn't allow */ override string ToString()
         {
-            return $"{base.ToString()} Camera: {_camera}";//Ensure the ToString method does what the method do.            
+            return $"{base.ToString()} Camera: {Shooter}";//Ensure the ToString method does what the method do.            
             
         }
     }
 
-    public class MonsterHunter : Hunter
-    {
-        public override string ToString()
-        {
-            return "I am a Monster Hunter";
-            
-
-        }
-    }
 }

@@ -119,4 +119,14 @@ The sealed keyword doesn't allow Inheritance of that class
 
 Abstract classes can have both concrete and abstract methods
 Abstract methods MUST be implemented in their derived classes
-Concrete classes cannot have abstract methods 
+Concrete classes cannot have abstract methods
+
+abstract class vs method
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
+
+method overloading vs method overriding
+In method overloading, methods must have the same name and different signatures. In method overriding, methods must have the same name and same signature.
+
+difference between interface and abstract class
+The short answer: An abstract class allows you to create functionality that subclasses can implement or override. An interface only allows you to define functionality, not implement it. And whereas a class can extend only one abstract class, it can take advantage of multiple interfaces.
