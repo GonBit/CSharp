@@ -15,7 +15,7 @@ namespace SafariParkApp
         }
 
         public Hunter(string fName, string lName, IShootable shooter) 
-        { 
+        {
             FirstName = fName;
             LastName = lName;
             Shooter = shooter;            

@@ -13,7 +13,7 @@ namespace SafariParkApp
         //Construtor
         public Weapon(string brand)
         {
-
+            _brand = brand;
         }
 
         public virtual string Shoot()

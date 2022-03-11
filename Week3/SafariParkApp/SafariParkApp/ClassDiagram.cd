@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="SafariParkApp.Person">
-    <Position X="1.25" Y="3" Width="2.25" />
+    <Position X="1.25" Y="4.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAIAAAAAEAEEAAAAAAAAAAAgIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAIAAAAAEAEAAAAAAAAAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -19,17 +19,13 @@
   <Class Name="SafariParkApp.Hunter">
     <Position X="1.25" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hunter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="System.Object">
-    <Position X="8.5" Y="1.25" Width="2.75" />
-    <TypeIdentifier />
-  </Class>
   <Class Name="SafariParkApp.Airplane">
-    <Position X="6" Y="4.75" Width="3.5" />
+    <Position X="4.5" Y="5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAIAAAAAEAAAAggAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Airplane.cs</FileName>
@@ -44,18 +40,26 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SafariParkApp.WaterPistol">
-    <Position X="14" Y="0.75" Width="1.5" />
+    <Position X="13.75" Y="5.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>WaterPistol.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SafariParkApp.LaserGun">
-    <Position X="16.5" Y="0.75" Width="1.5" />
+    <Position X="16.5" Y="5.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>LaserGun.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="SafariParkApp.Camera">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAFAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Camera.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
