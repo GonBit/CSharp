@@ -1,13 +1,39 @@
 # Monday 7/3/2022
 ## Exam
 
-PRACTICE THINGS LIKE ADDING UP NUMBERS MULTIPLE OF 2 OR DIVISIBLE BY SOMETHING
-BE CAREFUL IN THE WAY THAT STRING NAME, MAKE SURE THE STRING MATCHES THE RETURN IN THE QUESTIONS
-FINDING THE LARGEST, OR SMALLEST
-THE GARBAGE COLLECTOR
-THE TYPES OF DATA STORED AT THE HEAP
-OVERFLOW
-find lowest number in array and include negative NUMBERS
+First principles and advantages of Unit test
+
+3 advantages of NUnit test
+
+Understand the concept of TDD
+
+Understand of NUnit framwork works
+
+understand the .
+
+OOP related
+
+3 collections
+
+2 solid principles
+
+and rest is OOP pillars
+
+it will ask what they are, 
+
+Coding are inheritance
+
+Implentating interface
+
+creating class with construtor
+
+override method
+
+how to make a set method
+
+Understand the Dictionary - 2 coding questions
+
+
 
 ## Next Exam Monday 14/03
 
@@ -141,7 +167,7 @@ Both concrete and abstract classes can have a mixture of concrete and abstract m
 
 The sealed keyword doesn't allow Inheritance of that class
 
-Abstract classes can have both concrete and abstract methods
+Abstract classes can have both concrete and ab stract methods
 Abstract methods MUST be implemented in their derived classes
 Concrete classes cannot have abstract methods
 
@@ -222,6 +248,8 @@ Having smaller interfaces that describe only one type of behavior, helps enforce
 This invites high cohesion along with singular responsibility. 
 
 Good for readability, other devs understanding and your code and debugging. 
+
+# Thursday 10/3/2022
 
 ## Dependency Inversion
 
@@ -340,3 +368,68 @@ they have mathematical operations
 ## Dictionary
 
 Generally used to store key/value pairs**. The working of Dictionary is quite similar to the non-generic  hashtable. The advantage of Dictionary is, it is generic type.  Dictionary is defined under System. Collection
+
+# Friday 11/3/2022
+
+## Advanced Unit test
+
+```csharp
+        [Test]
+        public void TestListOfStrings()
+        {
+            var fruits = new List<string>
+            {
+                "apple", "pear", "peach", "banana"
+            };
+
+            Assert.That(fruits, Does.Contain("pear"));
+            Assert.That(fruits, Has.Count.EqualTo(4));
+            Assert.That(fruits, Has.Exactly(2).StartsWith("p"));
+
+        }
+        
+        [Test]
+        public void TestListClassic()
+        {
+            var myList = new List<int>
+            {
+                1,2,3
+            };
+            
+            //Old way
+            //Assert.AreEqual(1, myList.Where(x => x == 4).Count());
+            
+            //New way, more descriptive in the case of not passing
+            Assert.AreEqual(myList, Has.Exactly(1).EqualTo(4));           
+
+        }
+```
+
+## Principles of Unit testing
+
+SETUP is useful depending on the test. If it's something simple you don't need it but if you're doing something more complex
+
+
+
+Quality gate question
+
+![image-20220311120612954](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220311120612954.png)
+
+
+
+![Why Test-Driven Development (TDD) | Marsner Technologies](https://marsner.com/wp-content/uploads/test-driven-development-TDD.png)
+
+UNIT Test should be part of your definition of Done
+
+
+
+![image-20220311122708031](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220311122708031.png)
+
+MergeSort BubbleSort - LOOK UP
+
+
+
+
+
+
+

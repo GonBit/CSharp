@@ -10,20 +10,8 @@ namespace Collections_Lib
         /* removes and returns the next num entries in the queue, as a comma separated string */
         public static string NextInQueue(int num, Queue<string> queue)
         {
-            string returnS = "";
+            string returnS = "";                     
 
-            if (num > queue.Count)
-            {
-                int count = queue.Count;
-                for (int x = 0; x <= count -1/*gives the amount not the index*/; x++)
-                {
-                    returnS = returnS + queue.Peek();
-                    queue.Dequeue();
-                    returnS = returnS + ", ";
-                }
-                return returnS.Substring(0, returnS.Length - 2);
-            }
-            
             if (num == 0)
             {
                 return returnS;
@@ -32,9 +20,9 @@ namespace Collections_Lib
             {
                 for (int x = 0; x < num; x++)
                 {
-                    returnS = returnS + queue.Peek(); 
+                    returnS +=  queue.Peek(); 
                     queue.Dequeue();
-                    returnS = returnS + ", ";
+                    returnS +=  ", ";
                 }
                 return returnS.Substring(0, returnS.Length - 2);
             }                       
@@ -44,6 +32,7 @@ namespace Collections_Lib
         /* uses a Stack to create and return array of ints in reverse order to the one supplied */
         public static int[] Reverse(int[] original)
         {
+            //Can be done in One 
             int size = 0;
             int[] reversed;            
             var stack = new Stack<int>();
@@ -63,7 +52,7 @@ namespace Collections_Lib
         // using a Dictionary, counts and returns (as a string) the occurence of the digits 0-9 in the given string
         public static string CountDigits(string input)
         {
-            String returnS = "";
+            string returnS = "";
             var dictionary = new Dictionary<char, int>();
             var array = input.ToCharArray();
 
@@ -73,7 +62,7 @@ namespace Collections_Lib
                 {
                     dictionary[item]++;
                 }
-                else if (Char.IsDigit(item))
+                else if(Char.IsDigit(item))
                 { 
                     dictionary.Add(item, 1);
                 }
