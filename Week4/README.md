@@ -290,3 +290,8 @@ Though the use is the same in regards to data storage and exchange there are man
 ![image-20220318143131329](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220318143131329.png)
 
 ![image-20220318143333771](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220318143333771.png)
+
+![image-20220318151657679](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220318151657679.png)
+
+![image-20220318154435677](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220318154435677.png)
+
