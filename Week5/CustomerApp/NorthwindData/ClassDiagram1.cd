@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DBFirst.Customer">
+    <Position X="1.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAgAAACAAMIAAgAAAAAAIAABACAAACIAAEAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CustomerCustomerDemos" />
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DBFirst.CustomerCustomerDemo">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgEAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomerCustomerDemo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBFirst.Order">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAEAAABAAAAIAAAAABAAICABCAAEAhBAAAAEAAACACA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Employee" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DBFirst.Employee">
+    <Position X="9" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEgAEAAoAAAAGRIIAAAAAQAACIAAYACAIAAAAgCAAg=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
