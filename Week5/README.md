@@ -2,6 +2,10 @@
 
 # Tuesday
 
+## Anonymous type
+
+Use to create objects on the fly to encapsulate
+
 ## Serialization
 
 Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory, a database, or a file. Its main purpose is to save  the state of an object in order to be able to recreate it when needed.  The reverse process is called deserialization.
@@ -107,3 +111,29 @@ SELECT
 ![image-20220323155938299](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220323155938299.png)
 
 ![image-20220323161359971](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220323161359971.png)
+
+# Thursday 24/3/2022
+
+![image-20220324113917172](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324113917172.png)
+
+Loading
+
+![image-20220324115442875](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324115442875.png)
+
+
+
+![image-20220324115913503](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324115913503.png)
+
+OO vs Relational approach
+
+![image-20220324121233419](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324121233419.png)
+
+![image-20220324121623840](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324121623840.png)
+
+![image-20220324122249754](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324122249754.png)
+
+
+
+southwind
+
+![image-20220324150007527](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324150007527.png)
