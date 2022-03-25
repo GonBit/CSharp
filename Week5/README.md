@@ -137,3 +137,17 @@ OO vs Relational approach
 southwind
 
 ![image-20220324150007527](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220324150007527.png)
+
+
+
+prevoiuysly ![image-20220325122926347](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220325122926347.png)
+
+After
+
+![image-20220325122931585](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220325122931585.png)
+
+![image-20220325144547244](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220325144547244.png)
+
+
+
+![img](https://cdn.discordapp.com/attachments/946374083887644732/956945502014955580/unknown.png)

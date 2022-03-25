@@ -131,19 +131,26 @@ namespace NorthwindTests
             var result = _sut.Update("ROCKY", It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>());
 
             mockCustomerService.Verify(cs => cs.SaveCustomerChanges(), Times.Once);
-            mockCustomerService.Verify(cs => cs.GetCustomerById("ROCKY"), Times.Exactly(2));
+            mockCustomerService.Verify(cs => cs.GetCustomerById("ROCKY"), Times.Exactly(1));
             mockCustomerService.Verify(cs => cs.GetCustomersList(), Times.Never);
 
         }
 
         #endregion
 
-        #region Loose Strict
+        #region Loose and strick behaviour
+
+        [Test]
+        public void LetsSeeWhatHappensWhenWeCallUpdate_IfAllInvocationsArentSetup()
+        {
+            var mockCustomerService = new Mock<ICustomerService>(MockBehavior.Loose);
+            mockCustomerService.Setup(cs => cs.GetCustomerById("ROCKY")).Returns(new Customer());
+
+            _sut = new CustomerManager(mockCustomerService.Object);
+            var result = _sut.Update("ROCKY", It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>());          
 
 
-
+        }
         #endregion
-
-
     }
 }
