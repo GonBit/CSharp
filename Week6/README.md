@@ -61,3 +61,41 @@ Rules and conventions for async methods:
 ![image-20220328153317447](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220328153317447.png)
 
 ![image-20220328153506838](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220328153506838.png)
+
+# Tuesday 29/3/2022
+
+Execution pipeline
+
+![image-20220329102532036](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329102532036.png)
+
+We are adding middlewares
+
+## ASP.NET Frameworks
+
+![image-20220329141502239](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329141502239.png)
+
+![image-20220329141923705](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329141923705.png)
+
+![image-20220329142055081](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142055081.png)
+
+![image-20220329142358221](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142358221.png)
+
+![image-20220329142404607](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142404607.png)
+
+![image-20220329142514049](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142514049.png)
+
+![image-20220329142556438](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142556438.png)
+
+![image-20220329142720396](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142720396.png)
+
+![image-20220329142852854](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329142852854.png)
+
+![image-20220329143023252](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329143023252.png)
+
+![image-20220329143053692](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329143053692.png)
+
+![image-20220329143617195](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329143617195.png)
+
+![image-20220329144001819](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329144001819.png)
+
+![image-20220329145728105](C:\Users\BlkBird\AppData\Roaming\Typora\typora-user-images\image-20220329145728105.png)
