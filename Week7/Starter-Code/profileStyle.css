@@ -1,0 +1,158 @@
+body{
+    background-color: whitesmoke;
+    color: rgb(88, 86, 82);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.box-1{
+background-color: rgb(170, 108, 108);
+}
+
+.container{
+    width: 80%;
+    margin:auto
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+nav#mainNav{
+    background-color: royalblue;
+}
+
+.nav-items{
+    list-style-type: none;
+    display : inline-block;
+}
+
+#myPicture{
+    width: 300px;
+    height: auto
+}
+
+#myForm{
+    background-color: grey;
+    color: blanchedalmond;
+    padding: 50px;
+    margin: 10px
+}
+
+#myForm input[type ="text"]{
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button{
+      padding: 8px;
+      border: none;
+      background-color: darkblue;
+      color: whitesmoke;  
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: black;} /* Green */
+.csharp {width: 80%; background-color: black;} /* Blue */
+.sql {width: 65%; background-color: black;} /* Red */
+
+ 
