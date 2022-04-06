@@ -364,3 +364,5 @@ FodyWeavers.xsd
 /Week5/CodeFromNorthwind/NorthwindModel
 /Week7/NorthwindRazorPages/NorthwindRazorPages/wwwroot/lib
 /Week7/RazorPagesApp/RazorPagesApp/wwwroot/lib
+/Week7/MovieMVC/MovieMVC/wwwroot/lib
+/Week7/MovieMVC/MovieMVC/wwwroot/js

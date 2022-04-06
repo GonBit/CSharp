@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Demo</title>
+</head>
+<body>
+    <!-- <script>
+        window.alert("Hello there");
+        document.write("Greetings");
+        console.log("Hi everyone");
+    </script>-->
+<h1 id="greeting">HTML Demo</h1>
+<buttom onclick="">
+    <!--<script>        
+        function ChangeStyle(objec,oldStyle,newStyle)
+        {
+            obj.classList.remove(oldStyle);
+            obj.classList.add(newStyle);
+        }        
+    </script> -->
+    <p id="demo"></p>
+    <script>
+        class Person{
+            construtor(fName, lName, age){
+                this.firstName = fName;
+                this.lastName = lName;
+                this.age = age;
+            }
+            getFullName(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        nish = new Person("Nish", "Mandal", 32);
+        document.getElementById("demo").innerHTML = nish.getFullName() + " " +  nish.age ;
+    </script>
+</body>
+</html>
